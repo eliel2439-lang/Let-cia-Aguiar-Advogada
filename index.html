@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letícia Aguiar | Advogada | Contagem - MG</title>
+  <meta name="description" content="Letícia Aguiar | Advogada em Contagem - MG. Atendimento jurídico com orientação personalizada, clareza e comprometimento. WhatsApp (31) 98473-8697.">
+  <style>
+    :root{
+      --navy:#08182f;
+      --navy-2:#0d2342;
+      --gold:#c8a56b;
+      --gold-2:#e0c18a;
+      --paper:#f7f4ef;
+      --text:#172234;
+      --muted:#667085;
+      --line:rgba(8,24,47,.12);
+      --white:#ffffff;
+      --shadow:0 24px 60px rgba(8,24,47,.16);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--paper);color:var(--text);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    .header{position:sticky;top:0;z-index:20;background:rgba(247,244,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+    .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--navy),var(--navy-2));color:var(--gold-2);display:grid;place-items:center;font-family:Georgia,serif;font-size:18px;box-shadow:var(--shadow)}
+    .brand-text small{display:block;font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+    .brand-text strong{display:block;font-size:15px;line-height:1.2;max-width:300px}
+    nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    nav a{font-size:14px;font-weight:700;color:var(--navy)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:999px;font-weight:800;font-size:14px;transition:.2s ease;border:1px solid transparent}
+    .btn-primary{background:var(--gold);color:#111}
+    .btn-primary:hover{background:var(--gold-2);transform:translateY(-1px)}
+    .btn-outline{border-color:rgba(255,255,255,.35);color:var(--white);background:transparent}
+    .btn-light{border-color:var(--line);background:var(--white);color:var(--navy)}
+    .hero{background:radial-gradient(circle at top right,rgba(200,165,107,.18),transparent 30%),linear-gradient(135deg,var(--navy),var(--navy-2));color:var(--white);padding:72px 0 64px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2)}
+    h1,h2,h3{margin:0 0 16px;font-family:Georgia,serif;line-height:1.06}
+    h1{font-size:clamp(42px,6vw,76px);max-width:780px}
+    h2{font-size:clamp(30px,4vw,48px);color:var(--navy)}
+    .lead{font-size:18px;color:rgba(255,255,255,.88);max-width:660px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .hero-points{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .point{padding:10px 14px;border:1px solid rgba(255,255,255,.16);border-radius:999px;font-size:13px;font-weight:700;color:#eef2f7;background:rgba(255,255,255,.04)}
+    .photo-wrap{position:relative}
+    .photo-card{background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.06));padding:14px;border:1px solid rgba(255,255,255,.14);border-radius:30px;box-shadow:var(--shadow)}
+    .photo-card img{width:100%;height:auto;border-radius:22px;object-fit:cover}
+    .mini-card{position:absolute;left:-18px;bottom:26px;background:var(--white);color:var(--navy);padding:18px 20px;border-radius:22px;box-shadow:var(--shadow);max-width:260px}
+    .mini-card strong{display:block;font-size:15px;margin-bottom:4px}
+    .mini-card span{display:block;font-size:13px;color:var(--muted)}
+    .section{padding:78px 0}
+    .section.alt{background:#fff}
+    .section-head{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:end;margin-bottom:36px}
+    .section-head p{margin:0;color:var(--muted)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .card{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 10px 30px rgba(8,24,47,.05)}
+    .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .area h3{font-size:24px;color:var(--navy)}
+    .area p{margin:0;color:var(--muted);font-size:15px}
+    .differentials{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .diff{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:24px}
+    .diff strong{display:block;color:var(--navy);font-size:18px;margin-bottom:8px}
+    .diff p{margin:0;color:var(--muted);font-size:15px}
+    .contact-box{display:grid;grid-template-columns:1fr .9fr;gap:28px;align-items:stretch}
+    .contact-list{display:grid;gap:16px;margin-top:22px}
+    .contact-item{padding:18px 20px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .contact-item small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+    .cta-side{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;border-radius:28px;padding:34px;display:flex;flex-direction:column;justify-content:center}
+    .cta-side h3{font-size:34px;color:#fff}
+    .cta-side p{color:rgba(255,255,255,.82)}
+    .footer{background:var(--navy);color:#d8dee8;padding:28px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    .footer small{font-size:13px}
+    @media (max-width: 980px){
+      .hero-grid,.section-head,.about-grid,.contact-box{grid-template-columns:1fr}
+      .areas{grid-template-columns:1fr 1fr}
+      .differentials{grid-template-columns:1fr 1fr}
+      .mini-card{position:static;margin-top:16px;max-width:none}
+      nav{display:none}
+    }
+    @media (max-width: 640px){
+      .hero{padding-top:48px}
+      .areas,.differentials{grid-template-columns:1fr}
+      h1{font-size:40px}
+      .brand-text strong{max-width:220px}
+      .header-inner{padding:12px 0}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <div class="brand-mark">LA</div>
+        <div class="brand-text">
+          <small>Escritório de Advocacia</small>
+          <strong>Letícia Aguiar | Advogada</strong>
+        </div>
+      </a>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas de atuação</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn-primary" href="https://wa.me/5531984738697" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Advocacia • Atendimento personalizado</span>
+          <h1>Letícia Aguiar | Advogada</h1>
+          <p class="lead">Atendimento jurídico com seriedade, clareza e comprometimento. Suporte profissional para quem busca orientação segura, análise cuidadosa do caso e acompanhamento próximo em cada etapa.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5531984738697" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+            <a class="btn btn-outline" href="#areas">Conhecer áreas de atuação</a>
+          </div>
+          <div class="hero-points">
+            <div class="point">Atendimento direto com a advogada</div>
+            <div class="point">Atendimento online e presencial</div>
+            <div class="point">Contagem - MG</div>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <div class="photo-card">
+            <img src="foto_principal.png" alt="Retrato profissional de Letícia Aguiar | Advogada">
+          </div>
+          <div class="mini-card">
+            <strong>Atendimento humanizado e estratégico</strong>
+            <span>Orientação jurídica com atenção aos detalhes, foco na melhor condução do seu caso e comunicação clara do início ao fim.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" style="color:var(--gold);border-color:rgba(200,165,107,.3);background:rgba(200,165,107,.08)">Sobre o escritório</span>
+            <h2>Letícia Aguiar | Advogada</h2>
+          </div>
+          <p>Um escritório voltado a oferecer orientação jurídica com proximidade, responsabilidade e linguagem acessível, sempre buscando soluções adequadas à realidade de cada cliente.</p>
+        </div>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Compromisso com cada caso</h3>
+            <p>O atendimento é conduzido com escuta atenta, análise individual e atuação estratégica. O objetivo é proporcionar segurança para a tomada de decisões e condução jurídica responsável.</p>
+          </div>
+          <div class="card">
+            <h3>Atuação com clareza</h3>
+            <p>Explicações objetivas, acompanhamento próximo e informações transparentes sobre as etapas do atendimento ajudam o cliente a entender melhor seus direitos e possibilidades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="areas">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" style="color:var(--gold);border-color:rgba(200,165,107,.3);background:rgba(200,165,107,.08)">Áreas de atuação</span>
+            <h2>Atuação jurídica com foco em soluções práticas</h2>
+          </div>
+          <p>O escritório pode auxiliar em demandas consultivas e contenciosas, oferecendo orientação e acompanhamento em diferentes situações jurídicas.</p>
+        </div>
+        <div class="areas">
+          <div class="card area"><h3>Consultoria jurídica</h3><p>Orientação preventiva, análise de documentos, avaliação de riscos e suporte para decisões com mais segurança.</p></div>
+          <div class="card area"><h3>Direito civil</h3><p>Atuação em conflitos, responsabilidade civil, cobranças, obrigações, contratos e outras demandas do cotidiano.</p></div>
+          <div class="card area"><h3>Direito do consumidor</h3><p>Defesa de direitos em relações de consumo, problemas com serviços, produtos e cobranças indevidas.</p></div>
+          <div class="card area"><h3>Direito de família</h3><p>Acompanhamento em questões familiares com sensibilidade, organização e orientação adequada ao caso.</p></div>
+          <div class="card area"><h3>Análise contratual</h3><p>Leitura estratégica de contratos, revisão de cláusulas e apoio jurídico para maior proteção nas negociações.</p></div>
+          <div class="card area"><h3>Atendimento personalizado</h3><p>Cada situação é tratada de forma individual, com atenção ao contexto e à melhor estratégia jurídica possível.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="diferenciais">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" style="color:var(--gold);border-color:rgba(200,165,107,.3);background:rgba(200,165,107,.08)">Diferenciais</span>
+            <h2>Por que contar com o escritório</h2>
+          </div>
+          <p>Estrutura pensada para unir profissionalismo, comunicação clara e proximidade com o cliente.</p>
+        </div>
+        <div class="differentials">
+          <div class="diff"><strong>Atendimento próximo</strong><p>Contato direto, escuta ativa e acompanhamento com atenção em todas as etapas.</p></div>
+          <div class="diff"><strong>Comunicação objetiva</strong><p>Informações claras, linguagem acessível e transparência sobre caminhos possíveis.</p></div>
+          <div class="diff"><strong>Estratégia jurídica</strong><p>Análise criteriosa do caso para definir a condução mais adequada e eficiente.</p></div>
+          <div class="diff"><strong>Agilidade no contato</strong><p>Canal de atendimento prático pelo WhatsApp para facilitar o primeiro atendimento.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" style="color:var(--gold);border-color:rgba(200,165,107,.3);background:rgba(200,165,107,.08)">Contato</span>
+            <h2>Entre em contato</h2>
+          </div>
+          <p>Agende um atendimento e envie um resumo da sua situação para receber orientação inicial.</p>
+        </div>
+        <div class="contact-box">
+          <div class="card">
+            <h3>Informações</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <small>Nome</small>
+                <strong>Letícia Aguiar | Advogada</strong>
+              </div>
+              <div class="contact-item">
+                <small>WhatsApp</small>
+                <strong><a href="https://wa.me/5531984738697" target="_blank" rel="noopener noreferrer">(31) 98473-8697</a></strong>
+              </div>
+              <div class="contact-item">
+                <small>Endereço</small>
+                <strong>Av. Maria da Glória Rocha, 425 - Bitácula, Contagem - MG, 32010-375, Brasil</strong>
+              </div>
+            </div>
+          </div>
+          <div class="cta-side">
+            <h3>Fale agora pelo WhatsApp</h3>
+            <p>Se preferir, envie uma mensagem com seu nome e um breve resumo do atendimento que precisa. O retorno será feito com a devida atenção.</p>
+            <div style="margin-top:18px">
+              <a class="btn btn-primary" href="https://wa.me/5531984738697" target="_blank" rel="noopener noreferrer">Iniciar conversa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <small>© Letícia Aguiar | Advogada. Todos os direitos reservados.</small>
+      <small>Av. Maria da Glória Rocha, 425 - Bitácula, Contagem - MG, 32010-375, Brasil</small>
+    </div>
+  </footer>
+</body>
+</html>
